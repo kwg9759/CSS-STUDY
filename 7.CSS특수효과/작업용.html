@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEW ARSENAL</title>
+    <style>
+      h1 {
+        font-size: 72px;
+        margin-bottom: 0;
+        background-color: red;
+        text-align: center;
+        color: white;
+        border-color: white;
+        border: 3px;
+      }
+
+      .아스날 {
+        opacity: 0.5;
+      }
+
+      body {
+        margin-top: 100px;
+        font-family: "Trebuchet MS", serif;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      ul.tabs {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      ul.tabs li {
+        background: none;
+        color: #222;
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+
+      ul.tabs li.current {
+        background: #ededed;
+        color: #222;
+      }
+
+      .tab-content {
+        display: none;
+        background: #ededed;
+        padding: 15px;
+      }
+
+      .tab-content.current {
+        display: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ARSENAL</h1>
+    </header>
+    <div class="container">
+      <ul class="tabs">
+        <li class="tab link" date-tab="tab-1">tab1</li>
+        <li class="tab link" date-tab="tab-2">tab2</li>
+        <li class="tab link" date-tab="tab-3">tab3</li>
+      </ul>
+      <div id="tab-1" class="tab-content current">tab content1</div>
+      <div id="tab-2" class="tab-content">tab content2</div>
+      <div id="tab-3" class="tab-content">tab content3</div>
+    </div>
+    <div class="section02">
+      <div class="s2_wrap">
+        <span data-show="con_A" data-button="button_A" class="btn_A on"></span>
+        <span data-show="con_B" data-button="button_B" class="btn_B"></span>
+        <span data-show="con_C" data-button="button_C" class="btn_C"></span>
+        <span data-show="con_D" data-button="button_D" class="btn_D"></span>
+        <span data-show="con_E" data-button="button_E" class="btn_E"></span>
+        <i class="button_A on ani"></i>
+        <i class="button_B ani"></i>
+        <i class="button_C ani"></i>
+        <i class="button_D ani"></i>
+        <i class="button_E ani"></i>
+      </div>
+
+      <div class="content_box con_A">
+        <div class="content con_A">CONTETN A</div>
+        <div class="content con_B">CONTETN B</div>
+        <div class="content con_C">CONTETN C</div>
+        <div class="content con_D">CONTETN D</div>
+        <div class="content con_E">CONTETN E</div>
+      </div>
+    </div>
+  </body>
+</html>

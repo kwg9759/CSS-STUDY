@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글자쉐도우</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Single+Day&display=swap);
+      h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 5rem;
+      }
+      h2 {
+        font-family: "Single Day", cursive;
+        font-size: 5rem;
+      }
+
+      h1.a {
+        /* 가로 | 세로 | color */
+        text-shadow: 0.4rem 0.3rem 0.2rem red;
+      }
+
+      h1.b {
+        /* 가로 | 세로 | 번짐 */
+        text-shadow: 0.4rem 0.3rem 0.7rem steelblue;
+      }
+
+      h1.c {
+        /* 글자가 흰색일때 쉐도우로 나타냄 */
+        color: #fff;
+        text-shadow: 0.2rem 0.2rem 1rem steelblue;
+      }
+
+      h1.d {
+        /* 음수일때 반대쪽 */
+        text-shadow: -0.4rem -0.3rem 0.7rem steelblue;
+      }
+      h1.han {
+        font-family: "Single Day", cursive;
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="a">Welcome To My Course</h1>
+    <h1 class="b">Welcome To My Course</h1>
+    <h1 class="c">Welcome To My Course</h1>
+    <h1 class="d">Welcome To My Course</h1>
+    <h1 class="a han">구글폰트 한글폰트 설정</h1>
+    <h1 class="b han">구글폰트 한글폰트 설정</h1>
+    <h1 class="c han">구글폰트 한글폰트 설정</h1>
+    <h1 class="d han">구글폰트 한글폰트 설정</h1>
+  </body>
+</html>

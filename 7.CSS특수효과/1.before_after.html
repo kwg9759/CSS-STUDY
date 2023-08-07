@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상클래스</title>
+    <style>
+      body {
+        background-color: #333;
+        color: white;
+      }
+      /* 가상으로 content를 앞에 넣음 */
+      .name::before {
+        content: "⭐";
+        color: white;
+        padding-right: 5px;
+      }
+      .name::after {
+        content: "⭐";
+        color: white;
+        padding-right: 5px;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+      }
+      header h1 {
+        font-size: 6rem;
+        margin: 1rem;
+      }
+      header::before {
+        content: "⭐";
+
+        background: url("https://source.unsplash.com/1600x900/?flower,blue")
+          no-repeat center center/cover;
+        background-size: cover;
+        /* 기본 포지션 static이고 absolute는 화면기준으로 위치함 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        /* 투명도 1이면 불투명 0이면 완전투명*/
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <label class="name" for="name">이름</label>
+    <input type="text" /> -->
+    <header>
+      <h1>헬로우 월드1</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, hic!
+      </p>
+    </header>
+  </body>
+</html>
