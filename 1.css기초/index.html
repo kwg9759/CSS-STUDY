@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 적용</title>
-    <link ref="stylesheet" href="style.css">
-<style>
-    /* 1. 내부 스타일 */
-    h2{ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 적용 수정</title>
+    <link ref="stylesheet" href="style.css" />
+    <style>
+      /* 1. 내부 스타일 */
+      h2 {
         color: cornflowerblue;
-    }
-    body{
+      }
+      body {
         /* 글꼴 변경 */
         font-family: "NanumGothic";
-    }
-    .male {
+      }
+      .male {
         /* 글자색 변경*/
         color: #007bff;
-    }
-    .female{
+      }
+      .female {
         /* 글자색 변경 */
-        color : #e43681;
-        
-    }
+        color: #e43681;
+      }
 
-    /* ul 선택 */
-   ul{
-    /* 리스트 스타일 없애기! bullet 사라짐 */
-    list-style: none;
-   }
-   /* 아이디(#) 선택 */
+      /* ul 선택 */
+      ul {
+        /* 리스트 스타일 없애기! bullet 사라짐 */
+        list-style: none;
+      }
+      /* 아이디(#) 선택 */
 
-   #ceo {
-    /* 배경색 설정 */
-    background-color: #dfe0e1;
-   }
-
-</style>
-</head>
-<body>
+      #ceo {
+        /* 배경색 설정 */
+        background-color: #dfe0e1;
+      }
+    </style>
+  </head>
+  <body>
     <!-- 주석 ctrl + /  -->
     <!-- 1. 인라인 스타일     -->
-    <h1 style="color: red;">❤별다방 까페 수정</h1>
+    <h1 style="color: red">❤별다방 까페 수정</h1>
     <h2>운영진</h2>
     <ul>
-        <li class="male" id="ceo">X</li>
-        <li class="female">X</li>
+      <li class="male" id="ceo">X</li>
+      <li class="female">X</li>
     </ul>
     <h2>매니저</h2>
-      <ul>
-        <li class="male">P</li>
-        <li class="female">Q</li>
+    <ul>
+      <li class="male">P</li>
+      <li class="female">Q</li>
     </ul>
     <h2>알바</h2>
-      <ul>
-        <li class="male">A</li>
-        <li class="female">B</li>
-        <li class="male">C</li>
-        <li class="female">D</li>
+    <ul>
+      <li class="male">A</li>
+      <li class="female">B</li>
+      <li class="male">C</li>
+      <li class="female">D</li>
     </ul>
-</body>
+  </body>
 </html>
